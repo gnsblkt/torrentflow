@@ -6,7 +6,6 @@ class CatalogueDecoder {
     private val json = Json {
         ignoreUnknownKeys = false
         isLenient = false
-        explicitNulls = false
     }
 
     fun decode(payload: String): CatalogueManifest {
